@@ -1,4 +1,4 @@
-# 📡 Multi-Sensor Bluetooth Device Tracking
+# Multi-Sensor Bluetooth Device Tracking
 
 Eine webbasierte Plattform zur Echtzeit-Verfolgung und Visualisierung von Bluetooth-Geräten mittels BLE-Sensoren (Raspberry Pi / ESP32), Trilateration und Kalman-Filterung.
 
@@ -7,11 +7,11 @@ Eine webbasierte Plattform zur Echtzeit-Verfolgung und Visualisierung von Blueto
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Echtzeit-Tracking** über MQTT-Broker (Mosquitto / VCR)
 - **Offline-Analyse** historischer Daten (JSON-Import mit Drag & Drop)
-- **Trilateration** mit 1–N Sensoren und Qualitätsanzeige (🟢 High / 🟡 Medium / 🔴 Low)
+- **Trilateration** mit 1–N Sensoren und Qualitätsanzeige (High / Medium / Low)
 - **Kalman-Filter** zur Glättung der Positionsschätzungen (ein-/ausschaltbar)
 - **Interaktive Karte** (Leaflet.js) mit Dark/Light Theme
 - **Zonen-Management** — Geofencing mit Device-Counting (GeoJSON Import/Export)
@@ -21,7 +21,7 @@ Eine webbasierte Plattform zur Echtzeit-Verfolgung und Visualisierung von Blueto
 
 ---
 
-## 📋 Voraussetzungen
+## Voraussetzungen
 
 - **Node.js** (v16 oder höher) — nur für den MQTT-Proxy-Server benötigt
 - **Moderner Browser** (Chrome, Firefox, Edge)
@@ -29,7 +29,7 @@ Eine webbasierte Plattform zur Echtzeit-Verfolgung und Visualisierung von Blueto
 
 ---
 
-## ⚡ Schnellstart
+## Schnellstart
 
 ### 1. Repository klonen
 
@@ -65,7 +65,7 @@ start index.html
 
 ---
 
-## 📖 Nutzung
+## Nutzung
 
 ### Modus 1: Offline-Analyse (JSON-Upload)
 
@@ -83,7 +83,7 @@ start index.html
 
 ---
 
-## 🧪 Testdaten
+## Testdaten
 
 Im Ordner `test files/` befinden sich Testdaten vom letzten Test mit den Raspberry Pis an der TH Köln:
 
@@ -100,7 +100,7 @@ Im Ordner `test files/` befinden sich Testdaten vom letzten Test mit den Raspber
 
 ---
 
-## 📁 Projektstruktur
+## Projektstruktur
 
 ```
 smo-tracker/
@@ -118,31 +118,30 @@ smo-tracker/
 │   ├── gpsStorage.js           # GPS-Koordinaten (LocalStorage)
 │   └── uiController.js         # UI-Interaktionen & Theme-Switching
 ├── mqtt-proxy/
-│   ├── server.js               # MQTT → WebSocket Proxy-Server (Node.js)
+│   ├── server.js               # MQTT -> WebSocket Proxy-Server (Node.js)
 │   └── package.json            # Node.js-Abhängigkeiten
 ├── test files/
 │   ├── sensor_gps_coordinates (1).json   # GPS der Raspberry-Pi-Sensoren
 │   └── converted-1769824729316.json      # Aufgezeichnete Sensordaten
-├── projektbericht.md           # Ausführlicher Projektbericht
 └── README.md                   # Diese Datei
 ```
 
 ---
 
-## 🛠 Technologie-Stack
+## Technologie-Stack
 
 | Technologie | Zweck |
 |---|---|
 | **JavaScript (ES6+)** | Anwendungslogik (Vanilla JS, IIFE Module Pattern) |
 | **Leaflet.js** | Interaktive Kartenvisualisierung |
 | **Paho MQTT** | WebSocket-basierter MQTT-Client im Browser |
-| **Node.js + Express** | MQTT-Proxy-Server (TCP → WebSocket Bridge) |
+| **Node.js + Express** | MQTT-Proxy-Server (TCP -> WebSocket Bridge) |
 | **MQTT (Mosquitto)** | IoT-Nachrichtenprotokoll |
 | **HTML5 / CSS3** | Responsive UI mit Dark/Light Theme |
 
 ---
 
-## 👥 Team
+## Team
 
 | Teammitglied | Schwerpunkt |
 |---|---|
