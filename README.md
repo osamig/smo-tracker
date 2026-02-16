@@ -2,7 +2,7 @@
 
 Eine webbasierte Plattform zur Echtzeit-Verfolgung und Visualisierung von Bluetooth-Geräten mittels BLE-Sensoren (Raspberry Pi / ESP32), Trilateration und Kalman-Filterung.
 
-**Modul:** Data Processing — WS 2025/26  
+**Modul:** SMO — WS 2025/26  
 **Team BT Data Processing**
 
 ---
@@ -90,12 +90,12 @@ Im Ordner `test files/` befinden sich Testdaten vom letzten Test mit den Raspber
 | Datei | Beschreibung |
 |---|---|
 | `sensor_gps_coordinates (1).json` | GPS-Koordinaten der 6 Raspberry-Pi-Sensoren (thkoeln-piz2w-1 bis -8) am Campus |
-| `converted-1769824729316.json` | Aufgezeichnete Sensordaten (Distanzmessungen, MAC-Adressen) vom Live-Test |
+| `Sensor_data.json` | Aufgezeichnete Sensordaten (Distanzmessungen, MAC-Adressen) vom Live-Test |
 
 ### Testdaten laden
 
 1. Öffne `index.html`
-2. Ziehe die Datei `converted-1769824729316.json` per Drag & Drop auf die Karte
+2. Ziehe die Datei `Sensor_data.json` per Drag & Drop auf die Karte
 3. Die GPS-Koordinaten der Sensoren werden automatisch aus dem LocalStorage geladen, falls vorhanden — andernfalls importiere `sensor_gps_coordinates (1).json` über die GPS-Verwaltung
 
 ---
